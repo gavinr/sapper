@@ -21,6 +21,6 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.github_pat }}
         BRANCH: gh-pages
         FOLDER: __sapper__/export/sapper
